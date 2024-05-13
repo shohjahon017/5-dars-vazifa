@@ -30,8 +30,8 @@ label::after {
   box-sizing: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 input {
-  width: 0;
-  height: 0;
+  width: 0px;
+  height: 0px;
   visibility: hidden;
 }
 input:checked + label {
