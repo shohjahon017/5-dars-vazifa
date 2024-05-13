@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1500px;
+  height: 1000px;
+  position: relative;
+}
+.base,
+.layer,
+.layer-light {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.base {
+  background: url(https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+    no-repeat;
+  background-size: cover;
+}
+.layer {
+  background: url("forest-layer.png");
+  z-index: 2;
+}
+.layer-light {
+  background: url("forest-layer-light.png");
+  z-index: 3;
+}
+.text {
+  top: 420px;
+  left: 360px;
+  position: absolute;
+  font-family: "Franklin Gothic Heavy";
+  font-size: 450px;
+  color: white;
+  transform: scale(1, 1.15);
+  transition: 1s;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5),
+    3px 3px 10px rgba(255, 255, 255, 0.5), 5px 5px 70px rgba(255, 255, 255, 0.5);
+}
+.container:hover .text {
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9),
+    3px 3px 10px rgba(255, 255, 255, 0.9), 5px 5px 70px rgba(255, 255, 255, 0.9);
+}
+.container:hover .layer-light {
+  opacity: 1;
+}
+.layer-light {
+  opacity: 0.3;
+  transition: 1s;
+}

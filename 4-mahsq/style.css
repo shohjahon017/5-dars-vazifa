@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: dock11;
+  src: url(heavy_dock11.otf);
+}
+.body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-size: cover;
+  background-color: #332720;
+  color: white;
+}
+.background-text {
+  font-family: dock11;
+  font-size: 300px;
+  letter-spacing: 20px;
+  color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_giFZNe43aLZvfkzwcjoiHDVPRfwKNVw3AQ&s");
+  background-size: 120%;
+  animation: bg-animation 30s cubic-bezier(0.3, 0, 0.7, 1) infinite;
+}
+@keyframes bg-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
